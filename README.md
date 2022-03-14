@@ -1,4 +1,4 @@
-# marketing-campaign
+# Marketing campaign - Problem statement
 
 Previous campaign comprising of a random selection of customers from mortgage customer base was unsuccessful as only a small number took the product.​
 
