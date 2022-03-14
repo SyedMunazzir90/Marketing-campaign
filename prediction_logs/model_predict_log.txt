@@ -1,0 +1,14 @@
+2022-03-14/12:04:07		Predict target:  predict_target() begin!
+2022-03-14/12:04:07		Predict target: Reading the raw data file
+2022-03-14/12:04:07		Predict target: Fetching missing target values
+2022-03-14/12:04:07		Predict target: Creating bins on "age" and apply OneHotEncoding
+2022-03-14/12:04:08		Predict target: LabelEncoder on "postcode"
+2022-03-14/12:04:08		Predict target: Apply OneHotEncoding on "marital_status"
+2022-03-14/12:04:08		Predict target: Apply OrdinalEncoder on "education"
+2022-03-14/12:04:08		Predict target: Apply LabelEncoder on "job_title"
+2022-03-14/12:04:08		Predict target: Filter columns for prediction
+2022-03-14/12:04:08		Predict target: load model
+2022-03-14/12:04:08		Predict target: make predictions
+2022-03-14/12:04:10		Predict target: campaign_target_predict_df.csv created in post_processed_data_path
+2022-03-14/12:04:10		Predict target:  predict_target() ends!
+2022-03-14/12:04:10		-------------------------------------------------------------

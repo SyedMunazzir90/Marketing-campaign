@@ -1,0 +1,46 @@
+2022-03-14/12:03:35		Modelling Logistic Regression:  logistic_regression() begin!
+2022-03-14/12:03:35		Modelling Logistic Regression: Reading the cleaned file
+2022-03-14/12:03:35		Modelling Logistic Regression: Fetching available target values
+2022-03-14/12:03:35		Modelling Logistic Regression: Apply StandardScaler
+2022-03-14/12:03:35		Modelling Logistic Regression: Save campaign_df_scaled.csv
+2022-03-14/12:03:35		Modelling Logistic Regression: Train test split
+2022-03-14/12:03:35		Modelling Logistic Regression: Apply SMOTE
+2022-03-14/12:03:35		Modelling Logistic Regression: Finding best_params_ using GridSearchCV
+2022-03-14/12:03:36		Modelling Logistic Regression: Finding best_params_ using GridSearchCV
+2022-03-14/12:03:36		Modelling Logistic Regression: Build LogisticRegression on best_params_ :{'C': 1}
+2022-03-14/12:03:36		Modelling Logistic Regression: Saving confusion_matrix
+2022-03-14/12:03:36		Modelling Logistic Regression: Saving classification_report
+2022-03-14/12:03:36		              precision    recall  f1-score   support
+
+         0.0       0.98      0.83      0.90       548
+         1.0       0.34      0.83      0.48        58
+
+    accuracy                           0.83       606
+   macro avg       0.66      0.83      0.69       606
+weighted avg       0.92      0.83      0.86       606
+
+2022-03-14/12:03:36		Modelling Logistic Regression: Predict and save ROC curve
+2022-03-14/12:03:36		Modelling Logistic Regression: Dump logistic_regression_model pickle file in models path
+2022-03-14/12:03:36		-------------------------------------------------------------
+2022-03-14/12:03:36		Modelling Random Forests:  random_forest() begin!
+2022-03-14/12:03:36		Modelling Random Forests: Reading the cleaned file
+2022-03-14/12:03:36		Modelling Random Forests: Fetching available target values
+2022-03-14/12:03:36		Modelling Random Forests: Train test split
+2022-03-14/12:03:36		Modelling Random Forests: Apply SMOTE
+2022-03-14/12:03:36		Modelling Random Forests:  Setting the random grid {'n_estimators': [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200], 'max_features': ['auto', 'sqrt'], 'max_depth': [5, 10, 15, 20, 25, 30], 'min_samples_split': [2, 5, 10, 15, 100], 'min_samples_leaf': [1, 2, 5, 10]}
+2022-03-14/12:03:36		Modelling Random Forests:  Initiating RandomizedSearchCV
+2022-03-14/12:04:03		Modelling Random Forests:  Getting best_params_ {'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 25}
+2022-03-14/12:04:07		Modelling Random Forests: Saving confusion_matrix
+2022-03-14/12:04:07		Modelling Random Forests: Saving classification_report
+2022-03-14/12:04:07		              precision    recall  f1-score   support
+
+         0.0       0.93      0.96      0.95       548
+         1.0       0.46      0.33      0.38        58
+
+    accuracy                           0.90       606
+   macro avg       0.70      0.64      0.66       606
+weighted avg       0.89      0.90      0.89       606
+
+2022-03-14/12:04:07		Modelling Random Forests: Predict and save ROC curve
+2022-03-14/12:04:07		Modelling Random Forests: Dump random_forests_model pickle file in models path
+2022-03-14/12:04:07		-------------------------------------------------------------

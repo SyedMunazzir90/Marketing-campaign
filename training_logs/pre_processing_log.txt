@@ -1,0 +1,36 @@
+2022-03-14/12:03:02		preprocessing_mortgage: Reading the raw data file
+2022-03-14/12:03:19		preprocessing_mortgage: Profile generated!
+2022-03-14/12:03:19		preprocessing_mortgage: Calculate "age" from "dob" and apply sqrt transformation
+2022-03-14/12:03:19		preprocessing_mortgage: Frequency encode town
+2022-03-14/12:03:19		preprocessing_mortgage: convert salary to base currency GBP
+2022-03-14/12:03:20		preprocessing_mortgage: Drop paye
+2022-03-14/12:03:20		preprocessing_mortgage: calculate net_profit from capital_gain and capital_loss and OneHotEncode
+2022-03-14/12:03:20		preprocessing_mortgage: Cap outliers and apply sqrt on "employement_duration_years"
+2022-03-14/12:03:20		preprocessing_mortgage: Cap outliers and apply sqrt on "hours_per_week"
+2022-03-14/12:03:20		preprocessing_mortgage: OneHotEncode "gender"
+2022-03-14/12:03:20		preprocessing_mortgage: Cap outliers and apply sqrt on  "demographic_characteristic"
+2022-03-14/12:03:20		preprocessing_mortgage: Frequency encode "religion"
+2022-03-14/12:03:20		preprocessing_mortgage: Frequency encode "relationship"
+2022-03-14/12:03:20		preprocessing_mortgage: Frequency encode "race"
+2022-03-14/12:03:20		preprocessing_mortgage: Frequency encode "native_country"
+2022-03-14/12:03:20		preprocessing_mortgage: Frequency encode "workclass"
+2022-03-14/12:03:21		Clustering:  create_clusters() begin!
+2022-03-14/12:03:21		Clustering: Reading the cleaned file
+2022-03-14/12:03:21		Clustering: Reading the raw file
+2022-03-14/12:03:21		Clustering: Apply KMeans
+2022-03-14/12:03:22		Clustering: Assign cluster numbers after KMeans
+2022-03-14/12:03:22		Clustering: Storing 3 clusters in post_processed_data_path
+2022-03-14/12:03:22		-------------------------------------------------------------
+2022-03-14/12:03:22		preprocessing_campaign: Preprocess - preprocessing_campaign() begin!
+2022-03-14/12:03:22		preprocessing_campaign: Reading the raw data file
+2022-03-14/12:03:34		preprocessing_campaign: Profile generated!
+2022-03-14/12:03:34		preprocessing_campaign: Creating bins on "age" and apply OneHotEncoding
+2022-03-14/12:03:34		preprocessing_campaign: LabelEncoder on "postcode"
+2022-03-14/12:03:34		preprocessing_campaign: Apply OneHotEncoding on "marital_status"
+2022-03-14/12:03:34		preprocessing_campaign: Apply OrdinalEncoder on "education"
+2022-03-14/12:03:35		preprocessing_campaign: Apply LabelEncoder on "job_title"
+2022-03-14/12:03:35		preprocessing_campaign: Dropping other columns ['participant_id', 'age', 'name_title', 'first_name', 'last_name','postcode','marital_status', 'education','age_by_decade','job_title','company_email']
+2022-03-14/12:03:35		preprocessing_campaign: campaign_df_cleaned.csv created
+2022-03-14/12:03:35		preprocessing_campaign - preprocessing_campaign() end!
+2022-03-14/12:03:35		-------------------------------------------------------------
+
